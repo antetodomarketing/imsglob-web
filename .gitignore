@@ -1,0 +1,56 @@
+# === Backups, comprimidos y logs ===
+*.zip
+*.bak
+*.log
+error_log
+desktop.ini
+.DS_Store
+
+# === Carpeta de extracción del template ===
+template_extract/
+
+# === Páginas del template original (NO se usan) ===
+index-air-freight*.html
+index-default-backup.html
+index-full.html
+index-moving-company*.html
+index-onepage.html
+index-ship-freight*.html
+index-truck-freight*.html
+index-warehouse*.html
+services.html
+services-2.html
+service-single.html
+team.html
+careers.html
+certifications.html
+blog.html
+blog-single.html
+booking.html
+booking.php
+faq.html
+gallery.html
+testimonials.html
+track.html
+track-result.html
+default.php.bak
+
+# === Imágenes fuente / originales pesados (usamos las versiones limpias) ===
+images/*.png
+!images/logo-ims-white-h.png
+!images/logo-ims-white-stacked.png
+!images/logo-ims-black.png
+!images/sami-lsplatform.png
+images/banner-*.png
+images/ims-pallet-boxes.png
+
+# === services/: conservar SOLO las 4 imágenes optimizadas que usamos ===
+images/services/*
+!images/services/MRO.jpg
+!images/services/VMI.jpg
+!images/services/equipo-seguridad.jpg
+!images/services/construccion.jpg
+
+# === Git en Google Drive: ignorar temporales de sync ===
+*.tmp
+~$*

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3c4"/>
+      <stop offset="0.2" stop-color="#f6d365"/>
+      <stop offset="0.45" stop-color="#e0a82e"/>
+      <stop offset="0.7" stop-color="#f6d365"/>
+      <stop offset="1" stop-color="#bd8013"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.5" stop-color="#f3cf5e"/>
+      <stop offset="1" stop-color="#d9a52a"/>
+    </linearGradient>
+    <!-- circulo para el texto curvo (empieza a la izquierda, gira por arriba) -->
+    <path id="taglinePath" d="M 200,200 m 0,128 a 128,128 0 1,1 0,-256 a 128,128 0 1,1 0,256" fill="none"/>
+  </defs>
+
+  <!-- fondo negro -->
+  <circle cx="200" cy="200" r="196" fill="#111111"/>
+  <!-- anillo dorado exterior -->
+  <circle cx="200" cy="200" r="188" fill="none" stroke="url(#gold)" stroke-width="14"/>
+  <!-- anillo dorado interior fino -->
+  <circle cx="200" cy="200" r="158" fill="none" stroke="url(#gold)" stroke-width="4"/>
+
+  <!-- lema curvo alrededor (arriba) -->
+  <text font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="18" fill="url(#goldText)" letter-spacing="2">
+    <textPath href="#taglinePath" startOffset="50%" text-anchor="middle">MANTENIENDO INDUSTRIAS OPERANDO</textPath>
+  </text>
+
+  <!-- 10 -->
+  <text x="200" y="240" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="146" fill="url(#goldText)">10</text>
+  <!-- AÑOS -->
+  <text x="203" y="289" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="46" fill="url(#goldText)" letter-spacing="6">AÑOS</text>
+
+  <!-- 3 estrellas abajo -->
+  <g fill="url(#gold)">
+    <path transform="translate(174,326) scale(0.9)" d="M0,-11 L3.2,-3.4 L11.4,-3.4 L4.8,1.9 L7.1,9.7 L0,5 L-7.1,9.7 L-4.8,1.9 L-11.4,-3.4 L-3.2,-3.4 Z"/>
+    <path transform="translate(200,330) scale(1.15)" d="M0,-11 L3.2,-3.4 L11.4,-3.4 L4.8,1.9 L7.1,9.7 L0,5 L-7.1,9.7 L-4.8,1.9 L-11.4,-3.4 L-3.2,-3.4 Z"/>
+    <path transform="translate(226,326) scale(0.9)" d="M0,-11 L3.2,-3.4 L11.4,-3.4 L4.8,1.9 L7.1,9.7 L0,5 L-7.1,9.7 L-4.8,1.9 L-11.4,-3.4 L-3.2,-3.4 Z"/>
+  </g>
+</svg>
