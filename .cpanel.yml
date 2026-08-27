@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/imsglob/public_html
+    - /bin/cp -R ./* $DEPLOYPATH/
+    - /bin/cp -f ./.htaccess $DEPLOYPATH/
+    - /bin/cp -f ./robots.txt $DEPLOYPATH/
+    - /bin/cp -f ./sitemap.xml $DEPLOYPATH/
