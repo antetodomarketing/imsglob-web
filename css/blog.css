@@ -1,0 +1,225 @@
+/* ==========================================================================
+   IMS Global — Blog
+   Estilos de la sección de artículos (índice + entrada individual).
+   ========================================================================== */
+
+/* --- Tarjetas del índice --- */
+.blog-card {
+  display: block;
+  height: 100%;
+  background: #fff;
+  border: solid 1px rgba(0, 0, 0, .08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .10);
+}
+
+.blog-card .bc-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.blog-card .bc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.blog-card:hover .bc-image img {
+  transform: scale(1.06);
+}
+
+.blog-card .bc-tag {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 2;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.blog-card .bc-content {
+  padding: 25px;
+}
+
+.blog-card .bc-meta {
+  font-size: 13px;
+  color: var(--body-font-color);
+  margin-bottom: 10px;
+}
+
+.blog-card .bc-meta span + span:before {
+  content: "·";
+  margin: 0 8px;
+}
+
+.blog-card h3 {
+  font-size: 22px;
+  line-height: 1.35em;
+  margin-bottom: 12px;
+  color: var(--heading-font-color);
+  transition: .3s;
+}
+
+.blog-card:hover h3 {
+  color: var(--primary-color);
+}
+
+.blog-card .bc-excerpt {
+  color: var(--body-font-color);
+  margin-bottom: 0;
+}
+
+/* --- Cuerpo del artículo --- */
+.post-content {
+  font-size: 17px;
+  line-height: 1.85em;
+}
+
+.post-content .post-lead {
+  font-size: 21px;
+  line-height: 1.6em;
+  color: var(--heading-font-color);
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.post-content h2 {
+  font-size: 28px;
+  line-height: 1.3em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.post-content p {
+  margin-bottom: 22px;
+}
+
+.post-content .post-question {
+  border-left: solid 3px var(--primary-color);
+  padding: 4px 0 4px 22px;
+  margin: 0 0 22px 0;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: var(--heading-font-color);
+}
+
+.post-content .post-highlight {
+  background: var(--bg-grey);
+  border-radius: 8px;
+  padding: 30px 35px;
+  margin: 35px 0;
+  font-size: 20px;
+  line-height: 1.55em;
+  font-weight: 600;
+  color: var(--heading-font-color);
+}
+
+.post-content ul.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.post-content ul.post-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+.post-content ul.post-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .65em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+/* --- Meta de la entrada --- */
+.post-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--body-font-color);
+  border-top: solid 1px rgba(0, 0, 0, .08);
+  border-bottom: solid 1px rgba(0, 0, 0, .08);
+  padding: 15px 0;
+  margin-bottom: 40px;
+}
+
+.post-share a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: solid 1px rgba(0, 0, 0, .12);
+  color: var(--heading-font-color);
+  margin-right: 6px;
+  transition: .3s;
+}
+
+.post-share a:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* --- Pie del artículo (compartir + volver) --- */
+.post-footer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-footer-bar a.btn-main.btn-line {
+  color: var(--heading-font-color);
+  border: solid 1px rgba(0, 0, 0, .15);
+}
+
+.post-footer-bar a.btn-main.btn-line:hover {
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .post-content {
+    font-size: 16px;
+  }
+
+  .post-content .post-lead {
+    font-size: 19px;
+  }
+
+  .post-content h2 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .post-content .post-highlight {
+    padding: 25px;
+    font-size: 18px;
+  }
+}

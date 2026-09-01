@@ -74,4 +74,42 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://imsglob.com/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/competir-contra-fastenal-siendo-pyme-industrial.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/competir-contra-fastenal-siendo-pyme-industrial.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/competing-against-fastenal-as-an-industrial-sme-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/competir-contra-fastenal-siendo-pyme-industrial.html"/>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/competing-against-fastenal-as-an-industrial-sme-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/competir-contra-fastenal-siendo-pyme-industrial.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/competing-against-fastenal-as-an-industrial-sme-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/competir-contra-fastenal-siendo-pyme-industrial.html"/>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
