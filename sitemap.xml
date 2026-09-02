@@ -74,4 +74,16 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://imsglob.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog-vmi-mro.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
