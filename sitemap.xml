@@ -76,38 +76,110 @@
 
   <url>
     <loc>https://imsglob.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog/ser-indispensables.html</loc>
+    <loc>https://imsglob.com/blog/blog-en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/ser-indispensables/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/ser-indispensables/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/ser-indispensables/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/ser-indispensables/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog/suministro-mro.html</loc>
+    <loc>https://imsglob.com/blog/blog-en/ser-indispensables/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/ser-indispensables/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/ser-indispensables/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/ser-indispensables/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/suministro-mro/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/suministro-mro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/suministro-mro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/suministro-mro/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog/suministro-industrial-frontera.html</loc>
+    <loc>https://imsglob.com/blog/blog-en/suministro-mro/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/suministro-mro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/suministro-mro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/suministro-mro/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/suministro-industrial-frontera/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/suministro-industrial-frontera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/suministro-industrial-frontera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/suministro-industrial-frontera/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog/vmi-inventario.html</loc>
+    <loc>https://imsglob.com/blog/blog-en/suministro-industrial-frontera/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/suministro-industrial-frontera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/suministro-industrial-frontera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/suministro-industrial-frontera/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/vmi-inventario/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/vmi-inventario/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/vmi-inventario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/vmi-inventario/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog/epp-seguridad-industrial.html</loc>
+    <loc>https://imsglob.com/blog/blog-en/vmi-inventario/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/vmi-inventario/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/vmi-inventario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/vmi-inventario/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/epp-seguridad-industrial/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/epp-seguridad-industrial/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/epp-seguridad-industrial/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/epp-seguridad-industrial/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog/blog-en/epp-seguridad-industrial/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://imsglob.com/blog/epp-seguridad-industrial/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://imsglob.com/blog/blog-en/epp-seguridad-industrial/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://imsglob.com/blog/epp-seguridad-industrial/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

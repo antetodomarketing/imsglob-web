@@ -7,14 +7,19 @@
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-# --- Blog movido a /blog/ (301 desde las URLs viejas en la raíz) ---
+# --- Blog en /blog/ con URLs limpias (301 desde URLs viejas) ---
 <IfModule mod_alias.c>
     RedirectMatch 301 ^/blog\.html$ /blog/
-    RedirectMatch 301 ^/blog-ser-indispensables\.html$ /blog/ser-indispensables.html
-    RedirectMatch 301 ^/blog-suministro-mro\.html$ /blog/suministro-mro.html
-    RedirectMatch 301 ^/blog-suministro-industrial-frontera\.html$ /blog/suministro-industrial-frontera.html
-    RedirectMatch 301 ^/blog-vmi-inventario\.html$ /blog/vmi-inventario.html
-    RedirectMatch 301 ^/blog-epp-seguridad-industrial\.html$ /blog/epp-seguridad-industrial.html
+    RedirectMatch 301 ^/blog-ser-indispensables\.html$ /blog/ser-indispensables/
+    RedirectMatch 301 ^/blog-suministro-mro\.html$ /blog/suministro-mro/
+    RedirectMatch 301 ^/blog-suministro-industrial-frontera\.html$ /blog/suministro-industrial-frontera/
+    RedirectMatch 301 ^/blog-vmi-inventario\.html$ /blog/vmi-inventario/
+    RedirectMatch 301 ^/blog-epp-seguridad-industrial\.html$ /blog/epp-seguridad-industrial/
+    RedirectMatch 301 ^/blog/ser-indispensables\.html$ /blog/ser-indispensables/
+    RedirectMatch 301 ^/blog/suministro-mro\.html$ /blog/suministro-mro/
+    RedirectMatch 301 ^/blog/suministro-industrial-frontera\.html$ /blog/suministro-industrial-frontera/
+    RedirectMatch 301 ^/blog/vmi-inventario\.html$ /blog/vmi-inventario/
+    RedirectMatch 301 ^/blog/epp-seguridad-industrial\.html$ /blog/epp-seguridad-industrial/
 </IfModule>
 
 # --- Compresión GZIP ---
