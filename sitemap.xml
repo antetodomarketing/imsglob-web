@@ -75,37 +75,37 @@
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog.html</loc>
+    <loc>https://imsglob.com/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog-ser-indispensables.html</loc>
+    <loc>https://imsglob.com/blog/ser-indispensables.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog-suministro-mro.html</loc>
+    <loc>https://imsglob.com/blog/suministro-mro.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog-suministro-industrial-frontera.html</loc>
+    <loc>https://imsglob.com/blog/suministro-industrial-frontera.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog-vmi-inventario.html</loc>
+    <loc>https://imsglob.com/blog/vmi-inventario.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://imsglob.com/blog-epp-seguridad-industrial.html</loc>
+    <loc>https://imsglob.com/blog/epp-seguridad-industrial.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
