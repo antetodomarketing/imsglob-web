@@ -86,4 +86,28 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://imsglob.com/blog-suministro-mro.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog-suministro-industrial-frontera.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog-vmi-inventario.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://imsglob.com/blog-epp-seguridad-industrial.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
