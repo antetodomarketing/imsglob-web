@@ -1,33 +1,36 @@
 # ===== IMS Global — Rendimiento y seguridad =====
 
-# --- Forzar HTTPS ---
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # --- Forzar HTTPS ---
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # --- Blog: URLs viejas (.html) -> carpetas limpias ---
+    RewriteRule ^blog\.html$ /blog/ [R=301,L]
+    RewriteRule ^blog-([a-z0-9-]+)\.html$ /blog/$1/ [R=301,L]
+    RewriteRule ^blog/([a-z0-9-]+)\.html$ /blog/$1/ [R=301,L]
+
+    # --- index.html -> / ---
+    RewriteRule ^index\.html$ / [R=301,L]
+
+    # --- Quitar .html de las paginas de la raiz (301) ---
+    RewriteCond %{THE_REQUEST} \s/([^/.\s]+)\.html[\s?] [NC]
+    RewriteRule ^[^/]+\.html$ /%1 [R=301,L]
+
+    # --- Servir el .html correspondiente sin mostrar la extension ---
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.+?)/?$ $1.html [L]
 </IfModule>
 
-# --- Blog en /blog/ con URLs limpias (301 desde URLs viejas) ---
-<IfModule mod_alias.c>
-    RedirectMatch 301 ^/blog\.html$ /blog/
-    RedirectMatch 301 ^/blog-ser-indispensables\.html$ /blog/ser-indispensables/
-    RedirectMatch 301 ^/blog-suministro-mro\.html$ /blog/suministro-mro/
-    RedirectMatch 301 ^/blog-suministro-industrial-frontera\.html$ /blog/suministro-industrial-frontera/
-    RedirectMatch 301 ^/blog-vmi-inventario\.html$ /blog/vmi-inventario/
-    RedirectMatch 301 ^/blog-epp-seguridad-industrial\.html$ /blog/epp-seguridad-industrial/
-    RedirectMatch 301 ^/blog/ser-indispensables\.html$ /blog/ser-indispensables/
-    RedirectMatch 301 ^/blog/suministro-mro\.html$ /blog/suministro-mro/
-    RedirectMatch 301 ^/blog/suministro-industrial-frontera\.html$ /blog/suministro-industrial-frontera/
-    RedirectMatch 301 ^/blog/vmi-inventario\.html$ /blog/vmi-inventario/
-    RedirectMatch 301 ^/blog/epp-seguridad-industrial\.html$ /blog/epp-seguridad-industrial/
-</IfModule>
-
-# --- Compresión GZIP ---
+# --- Compresion GZIP ---
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml text/javascript application/javascript application/json application/xml image/svg+xml
 </IfModule>
 
-# --- Caché del navegador ---
+# --- Cache del navegador ---
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/jpeg "access plus 1 year"
@@ -44,7 +47,7 @@
     ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
 </IfModule>
 
-# --- Cabeceras de caché de respaldo ---
+# --- Cabeceras de cache de respaldo ---
 <IfModule mod_headers.c>
     <FilesMatch "\.(jpg|jpeg|png|webp|gif|svg|ico|mp4|woff2|woff|eot|ttf)$">
         Header set Cache-Control "max-age=31536000, public"
