@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    <!-- End Google Tag Manager -->
     <title>IMS Global - Optimización, Suministro y Excelencia Industrial</title>
     <link rel="icon" href="images/logo-ims-white-stacked.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -62,7 +59,7 @@
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <link href="css/swiper.css" rel="stylesheet" type="text/css" >
     <link href="css/swiper-custom-1.css" rel="stylesheet" type="text/css" >
     <link href="css/style.css" rel="stylesheet" type="text/css" >
@@ -72,7 +69,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>body, h1, h2, h3, h4, h5, h6, p, a, span, li, .menu-item, button, input, textarea { font-family: "Montserrat", sans-serif !important; }.ims-hero-title{font-weight:800 !important;letter-spacing:-1px;line-height:1.02;font-size:6.2vw !important;white-space:nowrap;text-align:left !important;}@media(max-width:991px){.ims-hero-title{font-size:10vw !important;white-space:normal;}}
 /* IMS: uniformar tarjetas de servicios */
 #section-services .relative.overflow-hidden{height:360px;}
@@ -82,9 +79,8 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="wrapper">
-        <a href="#" id="back-to-top"></a>
+        <a href="#" id="back-to-top" aria-label="Volver arriba"></a>
         
         <!-- page preloader begin -->
         <div id="de-loader"></div>
@@ -883,25 +879,6 @@
 <script id="hero-bg-video-init">
 (function(){function init(){var v=document.getElementById("hero-bg-video");if(!v)return;var big=window.matchMedia("(min-width:768px)").matches;var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;var save=navigator.connection&&navigator.connection.saveData;if(!big||reduce||save){return;}v.muted=true;v.setAttribute("muted","");v.setAttribute("preload","auto");v.load();var p=v.play();if(p&&p.catch){p.catch(function(){var o=function(){v.play();document.removeEventListener("click",o);};document.addEventListener("click",o);});}}if(document.readyState==="complete"){init();}else{window.addEventListener("load",init);}})();
 </script>
-<!-- LinkedIn Insight Tag -->
-<script type="text/javascript">
-_linkedin_partner_id = "9262306";
-window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script><script type="text/javascript">
-(function(l) {
-if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-window.lintrk.q=[]}
-var s = document.getElementsByTagName("script")[0];
-var b = document.createElement("script");
-b.type = "text/javascript";b.async = true;
-b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-s.parentNode.insertBefore(b, s);})(window.lintrk);
-</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9262306&fmt=gif" />
-</noscript>
-<!-- End LinkedIn Insight Tag -->
 </body>
 
 </html>
