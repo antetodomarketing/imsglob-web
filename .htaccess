@@ -3,8 +3,12 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # --- Forzar HTTPS ---
+    # --- Reto ACME de Let's Encrypt / AutoSSL: servir por HTTP sin redirigir ---
+    RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+    # --- Forzar HTTPS (excepto el reto ACME) ---
     RewriteCond %{HTTPS} !=on
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/ [NC]
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # --- Blog: URLs viejas (.html) -> carpetas limpias ---
